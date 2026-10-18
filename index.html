@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Rustic Eatery — Here's where the good times begin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff1d6;--red:#e63b2e;--mus:#ffc72c;--ink:#1b1512;--disp:'Bagel Fat One','Arial Rounded MT Bold',Impact,sans-serif;--sans:'Bricolage Grotesque',system-ui,sans-serif;--sh:5px 5px 0 var(--ink);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper);overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 18px/1.55 var(--sans);overflow-x:clip;max-width:100%}
+a{color:inherit;text-decoration:none}svg{max-width:100%}button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1}
+section{position:relative;max-width:1240px;margin:auto;padding:90px 5vw}
+h2{font-size:clamp(46px,10vw,110px);margin-bottom:14px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+nav{position:fixed;z-index:70;top:calc(10px + env(safe-area-inset-top,0px));left:3vw;right:3vw;max-width:1100px;margin:auto;display:flex;align-items:center;gap:10px;padding:8px 10px 8px 18px;background:var(--paper);border:3px solid var(--ink);border-radius:16px;box-shadow:var(--sh)}
+nav>a{font:400 24px var(--disp);margin-right:auto;color:var(--red)}
+nav .l a{margin-left:10px;padding:7px 16px;border-radius:99px;font-weight:800;transition:background .2s,transform .2s}nav .l a:hover{background:var(--mus);transform:rotate(-3deg)}
+#bg{display:none;width:42px;height:42px;border:3px solid var(--ink);border-radius:12px;background:var(--mus);cursor:pointer}#bg i{display:block;width:16px;height:3px;background:var(--ink);margin:3px auto;border-radius:2px}
+#hero{max-width:none;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:120px 5vw 70px;color:var(--paper);background:radial-gradient(55% 60% at 74% 46%,#e63b2e47,transparent 70%),radial-gradient(#ffffff12 1.3px,transparent 1.7px) 0 0/16px 16px,var(--ink)}
+.hw{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:3vw;align-items:center;max-width:1240px;margin:auto;width:100%}
+h1{font-size:clamp(46px,9vw,120px);letter-spacing:-.01em}.ln{display:block}.ln:nth-child(2){color:var(--red);-webkit-text-stroke:3px var(--paper);paint-order:stroke fill;text-shadow:6px 6px 0 #7a1810}
+.ln:nth-child(3){display:inline-block;background:var(--mus);border:4px solid var(--paper);padding:0 .2em .06em;margin-top:.12em;transform:rotate(-2deg);color:var(--ink);box-shadow:5px 5px 0 var(--red)}
+.w{display:inline-block;white-space:nowrap;margin-right:.22em}.w i{display:inline-block;font-style:normal;animation:pop .8s cubic-bezier(.3,1.7,.5,1) both;animation-delay:calc(.2s + var(--i)*.04s)}.w i:hover{animation:jig .5s}
+@keyframes pop{from{transform:translateY(70px) rotate(10deg) scale(.5);opacity:0}}@keyframes jig{50%{transform:translateY(-14px) rotate(-8deg) scale(1.15)}}
+.lead{max-width:30em;margin:26px 0 26px;font-size:19px;font-weight:600;background:#ffffff0f;color:var(--paper);border:3px solid var(--paper);border-radius:14px;padding:14px 18px;box-shadow:5px 5px 0 var(--red)}
+.btn{display:inline-block;padding:14px 26px;margin:0 12px 14px 0;border:3px solid var(--ink);border-radius:14px;background:var(--paper);font-weight:800;box-shadow:var(--sh);transition:transform .15s,box-shadow .15s,background .2s}
+.btn.f{background:var(--red);color:var(--paper)}.btn:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}.btn:active{transform:translate(4px,4px);box-shadow:1px 1px 0 var(--ink)}
+#hero .btn{border-color:var(--paper);box-shadow:5px 5px 0 var(--red);background:transparent;color:var(--paper)}#hero .btn.f{background:var(--red)}#hero .btn:hover{box-shadow:8px 8px 0 var(--red)}#hero .btn:active{box-shadow:1px 1px 0 var(--red)}
+.art{position:relative;height:min(84vw,430px)}
+.bd{position:absolute;left:50%;top:50%;width:min(64vw,300px);margin:calc(min(64vw,300px)/-2) 0 0 calc(min(64vw,300px)/-2);animation:rot 22s linear infinite}.bd text{font:400 15px var(--disp);fill:var(--ink)}
+@keyframes rot{to{transform:rotate(360deg)}}
+.ct{position:absolute;left:50%;top:50%;width:min(34vw,160px);height:min(34vw,160px);margin:calc(min(34vw,160px)/-2) 0 0 calc(min(34vw,160px)/-2);border-radius:50%;background:var(--red);border:4px solid var(--ink);box-shadow:var(--sh);display:grid;place-items:center;text-align:center;color:var(--paper);font:400 clamp(16px,3.4vw,24px)/1.05 var(--disp);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-12px) rotate(4deg)}}
+.dd{position:absolute;width:clamp(56px,13vw,92px);animation:wob 3.4s ease-in-out infinite}.d1{left:2%;top:6%}.d2{right:2%;top:10%;animation-delay:-1s}.d3{left:8%;bottom:4%;animation-delay:-2s}.d4{right:6%;bottom:6%;animation-delay:-.5s}
+@keyframes wob{50%{transform:translateY(-14px) rotate(12deg)}}
+.bst{width:clamp(70px,16vw,104px);aspect-ratio:1;display:grid;place-items:center;text-align:center;background:var(--mus);color:var(--ink);font:400 15px/1 var(--disp);clip-path:polygon(50% 0,61% 15%,79% 9%,82% 28%,100% 33%,90% 50%,100% 67%,82% 72%,79% 91%,61% 85%,50% 100%,39% 85%,21% 91%,18% 72%,0 67%,10% 50%,0 33%,18% 28%,21% 9%,39% 15%)}
+#tabs{display:flex;gap:10px;overflow-x:auto;padding:6px 6px 18px;margin:14px -6px 0;scrollbar-width:none}
+#tabs button{white-space:nowrap;padding:10px 20px;border:3px solid var(--ink);border-radius:99px;background:var(--paper);font-weight:800;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .15s,background .2s}
+#tabs button:hover{transform:translateY(-3px) rotate(-2deg);background:var(--mus)}#tabs .on{background:var(--red);color:var(--paper)}
+#list{border-top:3px solid var(--ink);background:radial-gradient(#1b151222 1.3px,transparent 1.6px) 0 0/14px 14px}
+.row{position:relative;border-bottom:3px solid var(--ink);overflow:hidden;cursor:pointer;isolation:isolate;-webkit-tap-highlight-color:transparent}
+.row:before{content:"";position:absolute;inset:0;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.7,0,.2,1);z-index:-1}
+.row:is(:hover,.open):before{transform:scaleX(1)}
+.rh{display:flex;align-items:center;gap:14px;padding:18px 14px;transition:color .3s,transform .5s cubic-bezier(.3,1.4,.5,1)}
+.row:is(:hover,.open) .rh{color:var(--paper);transform:translateX(14px)}
+.rn{font:400 clamp(22px,4.6vw,42px)/1.05 var(--disp)}.rn span{background:linear-gradient(var(--red),var(--red)) 0 92%/0 42% no-repeat;transition:background-size .5s .1s}
+.row:is(:hover,.open) .rn span{background-size:100% 42%}
+.tg{display:inline-block;margin-left:10px;padding:3px 10px;border:2px solid var(--ink);border-radius:8px;background:var(--mus);color:var(--ink);font:800 13px var(--sans);vertical-align:middle;transform:rotate(-4deg)}.tg.p{background:var(--red);color:var(--paper)}
+.row:is(:hover,.open) .tg{animation:jig .6s}
+.rp{margin-left:auto;padding:2px 14px;border-radius:99px;font:400 clamp(22px,3.8vw,34px) var(--disp);color:var(--red);white-space:nowrap;transition:transform .45s cubic-bezier(.3,1.8,.5,1),background .3s,color .3s}
+.rp small{font:600 14px var(--sans)}
+.row:is(:hover,.open) .rp{background:var(--mus);color:var(--ink);transform:rotate(-7deg) scale(1.18)}
+.rd{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.7,0,.2,1);color:var(--paper)}
+.rd p{overflow:hidden;min-height:0;max-width:44em;padding:0 14px 0 28px;font-weight:600}.rd span{display:block;padding:0 0 20px}
+.row:is(:hover,.open) .rd{grid-template-rows:1fr}
+.sh{padding:22px 14px 8px;font:400 30px var(--disp);color:var(--red);background:var(--paper);border-bottom:3px solid var(--ink)}
+.note{margin-top:20px;font-weight:600;max-width:46em}
+#ck{position:fixed;left:0;top:0;z-index:90;width:96px;height:96px;margin:-48px 0 0 -48px;pointer-events:none;display:grid;place-items:center;background:var(--mus);font:400 22px var(--disp);color:var(--ink);clip-path:polygon(50% 0,61% 15%,79% 9%,82% 28%,100% 33%,90% 50%,100% 67%,82% 72%,79% 91%,61% 85%,50% 100%,39% 85%,21% 91%,18% 72%,0 67%,10% 50%,0 33%,18% 28%,21% 9%,39% 15%);transform:scale(0);transition:transform .3s cubic-bezier(.3,1.8,.5,1)}
+#ck.on{transform:scale(1) rotate(12deg)}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);opacity:0;pointer-events:none;z-index:95;padding:12px 20px;background:var(--ink);color:var(--paper);border:3px solid var(--paper);border-radius:14px;box-shadow:5px 5px 0 var(--red);font-weight:800;text-align:center;max-width:90vw;transition:opacity .3s,transform .3s}#toast.on{opacity:1;transform:translate(-50%,0)}
+#br{background:var(--mus);background-image:radial-gradient(#1b151233 1.4px,transparent 1.8px);background-size:16px 16px;max-width:none;border-block:4px solid var(--ink)}
+.bw{max-width:1240px;margin:auto}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:22px;margin-top:30px}
+.tk{background:var(--paper);border:3px solid var(--ink);border-radius:20px;padding:22px 22px 20px;box-shadow:var(--sh);transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s;position:relative}
+.tk:nth-child(odd){transform:rotate(-1deg)}.tk:nth-child(even){transform:rotate(1deg)}.tk:hover{transform:translate(-4px,-6px) rotate(0);box-shadow:10px 10px 0 var(--ink)}
+.tk h3{font-size:34px;color:var(--red)}.tk p{font-weight:600;margin-top:4px}
+.tk .a{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding-top:16px;border-top:3px dashed var(--ink)}
+.tk .a a{padding:7px 15px;border:3px solid var(--ink);border-radius:99px;font-weight:800;font-size:15px;transition:background .2s,transform .2s}.tk .a a:hover{background:var(--mus);transform:rotate(-3deg)}.tk .a a.f{background:var(--red);color:var(--paper)}
+.hr{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:30px;font-weight:600}
+#st{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:3px solid var(--ink);border-radius:99px;background:var(--paper);font-weight:800}#st i{width:11px;height:11px;border-radius:50%;background:var(--red);animation:bk 1.4s infinite}@keyframes bk{50%{opacity:.2}}
+#ord{max-width:none;background:var(--red);color:var(--paper);overflow:hidden;text-align:center}
+#ord h2{-webkit-text-stroke:3px var(--ink);paint-order:stroke fill;text-shadow:6px 6px 0 var(--ink)}#ord p{font-weight:600;margin:0 auto 24px;max-width:34em}#ord .btn{color:var(--ink)}#ord .btn.f{background:var(--mus);color:var(--ink)}
+footer{background:var(--ink);color:var(--paper);padding:56px 5vw calc(34px + env(safe-area-inset-bottom,0px));text-align:center;overflow:hidden}
+.fg{height:34px;margin:-56px -5vw 40px;background-image:linear-gradient(90deg,#e63b2e 50%,transparent 50%),linear-gradient(#e63b2e 50%,transparent 50%);background-size:34px 34px;background-color:var(--paper)}
+.fb{font:400 clamp(46px,14vw,170px)/.9 var(--disp);color:var(--mus)}footer p{margin:14px auto 0;max-width:38em;opacity:.8;font-size:15px}.fl{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 26px;margin-top:20px;font-weight:800}.fl a{border-bottom:3px solid var(--red)}
+@media(max-width:860px){.hw{grid-template-columns:minmax(0,1fr)}.art{order:-1;height:min(88vw,380px)}section{padding:70px 5vw}
+nav .l{display:none;position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;padding:10px;background:var(--paper);border:3px solid var(--ink);border-radius:16px;box-shadow:var(--sh)}nav.open .l{display:flex}nav .l a{margin:0;padding:12px 14px;font-size:19px}#bg{display:block}#ck{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style></head><body>
+<nav id="nav"><a href="#hero">Rustic Eatery</a><div class="l"><a href="#menu">Menu</a><a href="#br">Branches</a><a href="#ord">Order</a></div><button id="bg" aria-label="Menu"><i></i><i></i><i></i></button></nav>
+
+<section id="hero"><div class="hw"><div>
+<h1 id="h1"><span class="ln">Here's where</span><span class="ln">the good times</span><span class="ln">begin!</span></h1>
+<p class="lead">Wood tables, mason-jar lights and BBQ comfort food, now at five branches across Dhaka.</p>
+<div><a class="btn f" href="#menu">See the menu</a><a class="btn" href="#br">Find a branch</a></div></div>
+<div class="art" aria-hidden="true">
+<svg class="bd" viewBox="0 0 200 200"><defs><path id="c" d="M100 100m-76 0a76 76 0 1 1 152 0a76 76 0 1 1-152 0"/></defs><circle cx="100" cy="100" r="98" fill="#ffc72c" stroke="#1b1512" stroke-width="4"/><text><textPath href="#c" textLength="470" lengthAdjust="spacing">Five branches * Chef's special BBQ rice * Six wing sauces * </textPath></text></svg>
+<div class="ct">Open daily<br>from 1 PM</div>
+<svg class="dd d1" viewBox="0 0 90 60"><path d="M6 10c8 26 40 40 74 30 6-2 6 6 0 8-40 14-76 0-82-34z" fill="#e63b2e" stroke="#1b1512" stroke-width="4" stroke-linejoin="round"/><path d="M6 10C4 4 10 1 14 4" fill="none" stroke="#1b1512" stroke-width="4" stroke-linecap="round"/></svg>
+<svg class="dd d2" viewBox="0 0 60 70"><path d="M30 4c4 16 22 22 22 42a22 22 0 01-44 0c0-12 6-16 9-26 4 6 9 8 13-16z" fill="#ffc72c" stroke="#1b1512" stroke-width="4" stroke-linejoin="round"/><path d="M30 36c3 8 10 10 10 18a10 10 0 01-20 0c0-6 6-8 10-18z" fill="#e63b2e" stroke="#1b1512" stroke-width="3"/></svg>
+<div class="dd d3 bst">New dishes!</div>
+<svg class="dd d4" viewBox="0 0 80 60"><ellipse cx="38" cy="32" rx="30" ry="20" fill="#fff1d6" stroke="#1b1512" stroke-width="4"/><path d="M20 30c8-10 24-10 32 0M24 40c8 6 20 6 28 0" fill="none" stroke="#e63b2e" stroke-width="4" stroke-linecap="round"/></svg>
+</div></div></section>
+
+<section id="menu"><h2>The menu</h2><p style="font-weight:600">Tap or hover a dish to open it. Prices are in taka.</p><div id="tabs" role="tablist"></div><div id="list"></div>
+<p class="note">* 5% VAT applies to food items and 10% SD to juice items. Prices and dishes can change, so confirm at your branch.</p></section>
+
+<section id="br"><div class="bw"><h2>Find your branch</h2><p style="font-weight:600">Five places to eat. The hotline is 01825-081554.</p><div class="g" id="g"></div>
+<div class="hr"><span id="st"><i></i><span id="stt"></span></span><span>Open daily, 1 PM to 11:45 PM. Hours can vary by branch, so call to confirm.</span></div></div></section>
+
+<section id="ord"><h2>Hungry already?</h2><p>Order for delivery on foodpanda, or call us and we will help you out.</p>
+<a class="btn f" target="_blank" rel="noopener" href="https://www.foodpanda.com.bd/restaurant/r60c/rustic-eatery-shantinagar">Order on foodpanda</a><a class="btn" href="tel:01825081554">Call 01825-081554</a><a class="btn" target="_blank" rel="noopener" href="https://www.facebook.com/rusticeatery/">Facebook</a><a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/rusticeaterybangladesh/">Instagram</a></section>
+
+<footer><div class="fg"></div><div class="fb">Rustic Eatery</div><p>Here's where the good times begin. Dhanmondi, Banani, Uttara, Shantinagar and Gulshan, Dhaka.</p><div class="fl"><a href="tel:01825081554">01825-081554</a><a target="_blank" rel="noopener" href="https://www.facebook.com/rusticeatery/">Facebook</a><a target="_blank" rel="noopener" href="https://www.instagram.com/rusticeaterybangladesh/">Instagram</a></div></footer>
+<div id="ck">Yum!</div><div id="toast" role="status"></div>
+<script>
+const $=s=>document.querySelector(s);
+const M={
+"Chicken":["Stuffed Chicken|625|Chicken breast stuffed with cheese, spinach and mushroom, garlic cream sauce, BBQ rice and thick-cut fries|P","Half Chicken, Type A|695|Half chicken with signature white sauce, BBQ rice and sausage-mushroom","Half Chicken, Type B|695|Half chicken with signature white sauce, BBQ rice and plenty of fries","Korean Chicken Steak|625|Korean-marinated chicken steak, mashed potato, BBQ rice and mushroom nuggets|P","Jamaican Chicken|655|BBQ chicken in Jamaican spices, fried chicken shashlik, garlic cream sauce, BBQ rice, mashed potato|P","Half A' Mexicano|695|BBQ chicken in Mexican herbs with tangy sauce, BBQ rice and mushroom nuggets","Naga Chicken Steak|635|Chicken steak marinated in chilli, with mashed potato, fries and BBQ rice","Lemon Spice Chicken|595|Lemon-spice chicken grilled in BBQ sauce, BBQ rice with poached egg, sauteed vegetables","Rub Chicken|645|Boneless chicken leg barbecued with signature rub, BBQ rice with poached egg, sausage-mushroom","Demi Glace Chicken|655|Boneless chicken leg stuffed with demi-glace, BBQ rice with poached egg, mushroom nuggets","Chicken Cream Ball|585|Five crispy chicken balls in chilli cream sauce, sausage-mushroom, BBQ rice and fries"],
+"Sea Food":["Fish Cram|685|Dori fish stuffed with mozzarella and creamy white sauce, BBQ rice and thick-cut fries","Lemon Butter Fish|725|Flaky fish fillet sauteed in lemon and butter, BBQ rice and mushroom nuggets","Fish & Fries|645|Crispy battered fish fillet with plenty of fries and tartar sauce","Creamy Garlic Fish|695|Fish fillet in garlicky cream sauce with sausage-mushroom and BBQ rice","Creamy Garlic Prawn|625|Lightly fried prawn in rich garlic cream, mushroom nuggets and BBQ rice","Cajun Cream Fish|735|Fried fish fillet in Cajun cream sauce with thick-cut fries and creamy mashed potato"],
+"Beef":["Beef Bulgogi|795|Boneless beef in Korean soya sauce, chicken shashlik, garlic cream, mashed potato, BBQ rice","Beef Fajitas|775|BBQ beef with Mexican spice, BBQ rice, mashed potato and mushroom nuggets","Spicy Beef & Mushroom|745|Chopped beef and mushroom in a spicy, tangy sauce with vegetables, fries and BBQ rice","Beef Carnival|765|Chopped beef with onion, capsicum and dry chilli, vegetables, sausage-mushroom, rice and mash","Garlic Beef|785|Slow-cooked beef with roasted garlic, BBQ rice, poached egg and mashed potato"],
+"Wings":["Spicy Lemon Wings|395|Eight crispy wings sauteed in lemon and chilli, with garlic mayo dip","Honey Glazed Wings|395|Eight crispy wings tossed in sweet honey glaze","Naga Wings|395|Eight crispy wings tossed in fiery naga chilli sauce","Creamy Wings|395|Eight crispy wings in a smooth savoury cream sauce","Buffalo Wings|395|Eight crispy wings in tangy buffalo sauce","Mexican Wings|395|Eight crispy wings tossed in spicy Mexican sauce","#Dips","Chilli Tomato, Garlic Mayo, Honey Mustard Mayo or Naga Tomato|20|Add to any wings order"],
+"Tid Bits":["Rustic Drums|445|Four chicken drums with garlic mayo, plenty of fries and a special mayo dip","Katsu & Fries|465|Six crispy chicken katsu, fries and honey mustard mayo dip|P","Calamari Pops|525|Crispy calamari with tartar sauce and lemon|P","Chicken Cheese Lollipop|395|Six BBQ chicken lollipops topped with cream cheese and spicy naga mayo","Golden Prawn|585|Six seasoned, breaded golden prawns with honey mustard dip","Garlic Mushroom|365|Mushrooms stir-fried in chilli and garlic, with chilli tomato dip","Cheese Sticks|385|Mozzarella sticks with the chef's honey mustard sauce","Prawn Wrap|565|Six wrapped prawns fried for crunch, with honey mustard mayo dip","Seafood Crunch|595|Cheese-stuffed seafood puffs of dori, calamari and prawn, with thick-cut fries and naga mayo"],
+"Spaghetti":["Chicken Ball Spaghetti|445|Spaghetti topped with seasoned chicken balls and rich sauce|N","Crab Spaghetti|585|Spaghetti with seasoned crab sausage in a rich sauce","Calamari Spaghetti|575|Spaghetti topped with seasoned calamari in a rich sauce","Spaghetti Bolognese|565|Classic spaghetti in slow-simmered beef sauce with savoury herbs and a poached egg","Prawn Spaghetti|555|Cajun-spiced fried prawns over spaghetti in a creamy BBQ sauce|N"],
+"Soup":["Cream of Chicken|425|Smooth, thick chicken soup with tender chicken","Sea Food Soup|545|Clear ginger-garlic soup with fish, calamari, mushroom and prawn","Cream of Chicken Bacon|465|Cream soup with soft bacon, topped with crispy bacon|N","Cajun Prawn Cream|525|Creamy Cajun-spiced soup loaded with fried prawns|N","Cream of Mushroom|445|Thick cream soup with fresh mushroom, garlic and pepper|P"],
+"Desserts":["Rustic Brownie|165|Heart-shaped brownie with choco chips and chocolate syrup","Strawberry Funtasy|235|Fresh yogurt mixed with strawberry puree|N","Yogurt Funtasy|225|Fresh yogurt mixed with cubed fruits"],
+"Shakes":["Strawberry Shake|265|Creamy blend made with strawberry puree|N","Blueberry Shake|285|Creamy blend made with blueberry puree|N","Milo Shake|245|Malty, creamy shake made with Milo|N"],
+"Drinks":["#Mood Booster","Dhakaiya Coffee|185|Regular coffee with a Dhakaiya twist, served with sweet bakarkhani","Hot Milo|195|Warm, milky Milo served with sweet bakarkhani","#Tea","Honey Ginger Tea|125|Teabag simmered in hot water with ginger and honey","#Juice","Limeapple|165|Pineapple juice with lemonade","Sunshine Orange|195|Fresh orange juice","Strawberry Lime|225|Strawberry puree with lemon extract","Lychee Lime|185|Sweet lychee puree with a dash of lime","Melonade|175|Fresh watermelon juice with lemon extract","Mango Lime|235|Mango puree with lemon extract|N","Blueberry Lime|245|Blueberry puree with lemon extract","Lemon Mint|165|Fresh lemon with mint","#Fizz and water","Carbonated Beverages|MRP|Priced as per MRP","Mineral Water|MRP|Priced as per MRP"]};
+// headline: split into bouncing letters
+let k=0;document.querySelectorAll('#h1 .ln').forEach(l=>{l.innerHTML=l.textContent.split(' ').map(w=>`<span class="w">${[...w].map(c=>`<i style="--i:${k++}">${c}</i>`).join('')}</span>`).join('')});
+// menu: rows that flood, highlight, pop and unfold on hover (tap on phones)
+const tb=$('#tabs'),ls=$('#list');
+function show(t){[...tb.children].forEach(b=>b.classList.toggle('on',b.textContent===t));
+ls.innerHTML=M[t].map((l,i)=>{const[a,p,d,f]=l.split('|');if(a[0]==='#')return`<div class="sh">${a.slice(1)}</div>`;
+const pr=/^\d/.test(p)?`৳${p}<small>*</small>`:p;
+return`<article class="row" tabindex="0" style="animation:pp .5s ${i*.04}s both"><div class="rh"><div class="rn"><span>${a}</span>${f?`<em class="tg ${f==='P'?'p':''}" style="font-style:normal">${f==='N'?'New':'Popular'}</em>`:''}</div><div class="rp">${pr}</div></div><div class="rd"><p><span>${d}</span></p></div></article>`}).join('')}
+document.head.insertAdjacentHTML('beforeend','<style>@keyframes pp{from{opacity:0;transform:translateY(24px)}}</style>');
+Object.keys(M).forEach(t=>{const b=document.createElement('button');b.textContent=t;b.setAttribute('role','tab');b.onclick=()=>show(t);tb.append(b)});show('Chicken');
+ls.addEventListener('click',e=>{const r=e.target.closest('.row');if(r)r.classList.toggle('open')});
+ls.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const r=e.target.closest('.row');if(r){e.preventDefault();r.classList.toggle('open')}}});
+// starburst that follows the cursor over the menu (mouse only)
+const ck=$('#ck');if(matchMedia('(hover:hover) and (pointer:fine)').matches){ls.addEventListener('pointermove',e=>{ck.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;ck.classList.toggle('on',!!e.target.closest('.row'))});ls.addEventListener('pointerleave',()=>ck.classList.remove('on'))}
+// branches
+const fbm='https://www.facebook.com/rusticeatery/',B=[["Dhanmondi","House 36, Road 9/A, Dhanmondi","House 36 Road 9/A Dhanmondi","",""],["Banani","House 2 (1st floor), Road 8, Block D, Banani","House 2 Road 8 Block D Banani","https://www.facebook.com/rusticeaterybanani/","https://www.foodpanda.com.bd/restaurant/okch/rustic-eatery-banani"],["Uttara","House 1 (2nd floor), Road 13, Sector 13, Uttara","House 1 Road 13 Sector 13 Uttara","https://www.facebook.com/rusticeateryuttara/","https://www.foodpanda.com.bd/restaurant/b8fl/rustic-eatery-uttara"],["Shantinagar","Flat 2F (1st floor), Sheltech Astra, House 158, Shantinagar","Sheltech Astra 158 Shantinagar","https://www.facebook.com/rusticeateryshantinagar4","https://www.foodpanda.com.bd/restaurant/r60c/rustic-eatery-shantinagar"],["Gulshan","House 60/A, Midtown Center (1st floor), Road 131, Gulshan 1, Dhaka 1212","Midtown Center Road 131 Gulshan 1","",""]];
+$('#g').innerHTML=B.map(([n,a,q,fb,fp])=>`<div class="tk"><h3>${n}</h3><p>${a}</p><div class="a"><a class="f" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rustic Eatery '+q+' Dhaka')}">Directions</a>${fp?`<a target="_blank" rel="noopener" href="${fp}">foodpanda</a>`:''}<a target="_blank" rel="noopener" href="${fb||fbm}">Facebook</a><a href="tel:01825081554">Call</a></div></div>`).join('');
+// open now, Dhaka time (1 PM to 11:45 PM)
+const f=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Dhaka',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date()),m=+f[0].value*60+ +f[2].value;
+$('#stt').textContent=m>=780&&m<1425?'Open now':'Closed right now';
+$('#bg').onclick=()=>$('#nav').classList.toggle('open');document.querySelectorAll('nav .l a').forEach(a=>a.onclick=()=>$('#nav').classList.remove('open'));
+// call buttons: phones dial; computers copy the number instead of navigating away (that blanked the page)
+const tt=$('#toast'),say=m=>{tt.textContent=m;tt.classList.add('on');clearTimeout(tt._t);tt._t=setTimeout(()=>tt.classList.remove('on'),3800)};
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="tel:"]');if(!a||matchMedia('(hover:none),(pointer:coarse)').matches)return;e.preventDefault();const n='01825-081554';try{navigator.clipboard.writeText(n).then(()=>say('Hotline '+n+' copied. Call us from your phone.'),()=>say('Call us on '+n))}catch(x){say('Call us on '+n)}});
+</script></body></html>
